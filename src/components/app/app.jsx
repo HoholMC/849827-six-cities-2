@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {PlaceCard} from '../place-card/place-card.jsx';
 
 export const App = (props) => {
-  const {names} = props;
+  const {names, nameOnClick} = props;
   return <div className="page page--gray page--main">
     <header className="header">
       <div className="container">
@@ -95,7 +95,7 @@ export const App = (props) => {
                */}
             </form>
             <div className="cities__places-list places__list tabs__content">
-              {names.map((it, i) => <PlaceCard key={name + i} name={it} />)}
+              {names.map((it, i) => <PlaceCard key={name + i} name={it} nameOnClick={nameOnClick} />)}
             </div>
           </section>
           <div className="cities__right-section">
@@ -108,5 +108,6 @@ export const App = (props) => {
 };
 
 App.propTypes = {
-  names: PropTypes.arrayOf(PropTypes.string),
+  names: PropTypes.arrayOf(PropTypes.string).isRequired,
+  nameOnClick: PropTypes.func.isRequired,
 };
