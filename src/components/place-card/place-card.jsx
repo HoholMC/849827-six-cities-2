@@ -41,5 +41,5 @@ export const PlaceCard = (props) => {
 
 PlaceCard.propTypes = {
   name: PropTypes.string,
-  nameOnClick: PropTypes.func
+  nameOnClick: PropTypes.func.isRequired
 };
