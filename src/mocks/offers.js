@@ -1,0 +1,38 @@
+export const offers = [
+  {
+    mark: `Premium`,
+    imageSrc: `img/apartment-01.jpg`,
+    priceValue: `\u20AC120`,
+    priceText: `/\u00A0night`,
+    rating: `93%`,
+    name: `Beautiful \u0026 luxurious apartment at great location`,
+    type: `Apartment`,
+  },
+  {
+    // mark: ``,
+    imageSrc: `img/room.jpg`,
+    priceValue: `\u20AC80`,
+    priceText: `/\u00A0night`,
+    rating: `80%`,
+    name: `Wood and stone place`,
+    type: `Private room`,
+  },
+  {
+    // mark: ``,
+    imageSrc: `img/apartment-02.jpg`,
+    priceValue: `\u20AC132`,
+    priceText: `/\u00A0night`,
+    rating: `80%`,
+    name: `Canal View Prinsengracht`,
+    type: `Apartment`,
+  },
+  {
+    mark: `Premium`,
+    imageSrc: `img/apartment-03.jpg`,
+    priceValue: `\u20AC180`,
+    priceText: `/\u00A0night`,
+    rating: `100%`,
+    name: `Nice, cozy, warm big bed apartment`,
+    type: `Apartment`,
+  },
+];
